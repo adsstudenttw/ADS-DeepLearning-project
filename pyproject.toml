@@ -1,0 +1,69 @@
+[build-system]
+build-backend = "pdm.backend"
+requires = ["pdm-backend"]
+
+[project]
+name = "ADS Deep Learning project"
+version = "0.1.0"
+description = ""
+
+requires-python = ">=3.10,<3.12"
+license = {text = "MIT"}
+
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Typing :: Typed",
+]
+
+dependencies = [
+    "torch>=2.0.1",
+    "numpy>=1.25.0",
+    "loguru>=0.7.0",
+    "pydantic>=1.10.9",
+    "pandas>=2.0.3",
+    "mads-datasets[torch]>=0.3.10",
+    "matplotlib>=3.7.1",
+    "seaborn>=0.12.2",
+    "torchsummary>=1.5.1",
+    "plotly>=5.17.0",
+    "mltrainer>=0.1.11",
+    "hyperopt>=0.2.7",
+    "shap>=0.43.0",
+    "hpbandster>=0.7.4",
+    "configspace>=0.7.1",
+    "bayesian-optimization>=1.4.3",
+    "tensorboard>=2.15.1",
+    "torch-tb-profiler>=0.4.3",
+]
+
+[tool.mypy]
+ignore_missing_imports = true
+strict_optional = true
+warn_unreachable = true
+pretty = true
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "jupyter>=1.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.6.1",
+    "black>=23.10.0",
+    "toml-sort>=0.23.1",
+    "isort>=5.12.0",
+]
+
+[tool.pdm.resolution.overrides]
+grpcio = ">=1.53.0"
+
+[tool.ruff]
+ignore = [
+  "ANN101",
+  "ANN102",
+  "D",
+  "FIX002",
+  "INP001",
+]
+line-length = 88
