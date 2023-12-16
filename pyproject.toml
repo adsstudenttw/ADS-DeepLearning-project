@@ -3,7 +3,7 @@ build-backend = "pdm.backend"
 requires = ["pdm-backend"]
 
 [project]
-name = "ADS Deep Learning project"
+name = "ads_deep_learning_project"
 version = "0.1.0"
 description = ""
 
