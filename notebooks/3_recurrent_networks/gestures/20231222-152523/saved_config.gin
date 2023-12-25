@@ -1,0 +1,17 @@
+import gin.torch.external_configurables
+
+# Parameters for BaseRNN:
+# ==============================================================================
+BaseRNN.hidden_size = 128
+BaseRNN.horizon = 20
+BaseRNN.input_size = 3
+BaseRNN.num_layers = 3
+
+# Parameters for GRUmodel:
+# ==============================================================================
+GRUmodel.config = \
+    {'dropout': 0.2,
+     'hidden_size': 256,
+     'input_size': 3,
+     'num_layers': 6,
+     'output_size': 20}

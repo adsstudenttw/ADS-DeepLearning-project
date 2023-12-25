@@ -1,0 +1,7 @@
+import gin.torch.external_configurables
+
+# Parameters for BaseRNN:
+# ==============================================================================
+BaseRNN.hidden_size = 32
+BaseRNN.input_size = 1
+BaseRNN.num_layers = 2
