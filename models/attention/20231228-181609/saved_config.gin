@@ -1,0 +1,19 @@
+import gin.torch.external_configurables
+
+# Parameters for AttentionGRU:
+# ==============================================================================
+AttentionGRU.config = \
+    {'dropout': 0.06,
+     'hidden_size': 120,
+     'input_size': 3,
+     'num_layers': 4,
+     'output_size': 20}
+
+# Parameters for GRUmodel:
+# ==============================================================================
+GRUmodel.config = \
+    {'dropout': 0.06,
+     'hidden_size': 120,
+     'input_size': 3,
+     'num_layers': 4,
+     'output_size': 20}

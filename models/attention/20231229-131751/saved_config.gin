@@ -1,0 +1,17 @@
+# Parameters for AttentionNLP:
+# ==============================================================================
+AttentionNLP.config = \
+    {'dropout': 0.1,
+     'hidden_size': 128,
+     'num_layers': 3,
+     'output_size': 2,
+     'vocab': 10000}
+
+# Parameters for NLPmodel:
+# ==============================================================================
+NLPmodel.config = \
+    {'dropout': 0.1,
+     'hidden_size': 128,
+     'num_layers': 3,
+     'output_size': 2,
+     'vocab': 10000}
